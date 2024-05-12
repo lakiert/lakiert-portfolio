@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import ButtonSite from './ButtonSite'
+import ListElement from './ListElement';
 
 
 export default function App() {
@@ -12,8 +12,9 @@ export default function App() {
       <h2 id="small-title">My projects</h2>
 
       <div className='list-container'>
-          <ButtonSite text={"Example company website"} link={"https://lakiert.github.io/company_website"}></ButtonSite>
-          <ButtonSite text={"To-do list"} link={"https://lakiert-todo-list.netlify.app"}></ButtonSite>
+          <ListElement projectName={"Example company website"} linkProject={"https://lakiert.github.io/company_website"} linkGithub={"https://github.com/lakiert/company_website"}></ListElement>
+          <ListElement projectName={"To-do list"} linkProject={"https://lakiert-todo-list.netlify.app"} linkGithub={"https://github.com/lakiert/react-to-do-list"}></ListElement>
+          
       </div>
     </div>
   )

@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(img/engin-akyurt-gJILnne_HFg-unsplash.jpg)no-repeat center center/cover;
+  height: 100vh;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Courier New', monospace;
+}
+
+.big-container{
+  background-color: rgba(255, 255, 255, .5);
+  height: 90vh;
+  height: 90svh;
+  width: 70%;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 5px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 60%;
+}
+
+.btn-site{
+  font-size: 1.4rem;
+  padding: 20px;
+  margin: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgba(70, 131, 180, 0.5);
+
+  transition: .3s;
+  cursor: pointer;
+
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
+.btn-site:hover{
+  background-color: rgba(90, 151, 200);
+}
+
+#big-title{
+  margin-top: 40px;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+#small-title{
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+@media screen and (max-width:735px) {
+  .btn-site{
+      width: 80%;
+      font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:460px){
+
+  .big-container{
+      width: 90%;
+  }
+}

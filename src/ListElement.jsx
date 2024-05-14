@@ -4,8 +4,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export default function ListElement({projectName, linkProject, linkGithub}){
     return(
         <div className="list-element">
-            <button className={"btn-site"} children={projectName} onClick={() => window.open(linkProject, '_blank')}></button>
-            <button className={"btn-github"} children={<FontAwesomeIcon icon={faGithub} /> } onClick={() => window.open(linkGithub, '_blank')}></button>
+            <button name={projectName} className={"btn-site"} children={projectName} onClick={() => window.open(linkProject, '_blank')}></button>
+            <button name={`github repository of ${projectName}`}className={"btn-github"} children={<FontAwesomeIcon icon={faGithub} /> } onClick={() => window.open(linkGithub, '_blank')}></button>
         </div>
     );
 }
